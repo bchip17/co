@@ -1,6 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require('dotenv').config()
-
+require("@nomiclabs/hardhat-etherscan");
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -46,5 +46,9 @@ module.exports = {
         }
       }
     }]
+  },etherscan: {
+    apiKey: {
+      arbitrumOne: process.env.ARBISCAN_API_KEY,
+    }
   }
 };
