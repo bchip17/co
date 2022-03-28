@@ -83,7 +83,7 @@ async function main() {
   const bcp = {address: process.env.DEPLOY_BCP_ADDR};
   console.log("bcp:", bcp.address);
 
-  const usdc = {address: DEPLOY_USDC_ADDR};
+  const usdc = {address: process.env.DEPLOY_USDC_ADDR};
   console.log("usdc:", usdc.address);
 
 
@@ -181,14 +181,14 @@ async function main() {
     {
       id: 'ETH-USD',
       maxLeverage: 50,
-      fee: 0.1,
+      fee: 0,
       interest: 16,
       liquidationThreshold: 80
     },
     {
       id: 'BTC-USD',
       maxLeverage: 50,
-      fee: 0.1,
+      fee: 0,
       interest: 16,
       liquidationThreshold: 80
     }

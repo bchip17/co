@@ -16,13 +16,13 @@ module.exports = {
       //   interval: [10000, 20000]
       // }
     },
-    rinkeby: {
-      url: process.env.RINKEBY_URL,
-      accounts: [process.env.RINKEBY_PKEY]
-    },
-    mainnet: {
-      url: process.env.MAINNET_URL
-    },
+    // rinkeby: {
+    //   url: process.env.RINKEBY_URL,
+    //   accounts: [process.env.RINKEBY_PKEY]
+    // },
+    // mainnet: {
+    //   url: process.env.MAINNET_URL
+    // },
     arbitrum_rinkeby: {
       url: 'https://rinkeby.arbitrum.io/rpc',
       accounts: [process.env.RINKEBY_PKEY]
